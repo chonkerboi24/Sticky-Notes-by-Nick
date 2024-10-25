@@ -43,6 +43,7 @@
             this.btnNewNote.TabIndex = 0;
             this.btnNewNote.Text = "New Note";
             this.btnNewNote.UseVisualStyleBackColor = false;
+            this.btnNewNote.Click += new System.EventHandler(this.btnNewNote_Click);
             // 
             // tbNote
             // 
