@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnNewNote = new System.Windows.Forms.Button();
+            this.tbNote = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnNewNote
@@ -43,22 +44,35 @@
             this.btnNewNote.Text = "New Note";
             this.btnNewNote.UseVisualStyleBackColor = false;
             // 
+            // tbNote
+            // 
+            this.tbNote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNote.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNote.Location = new System.Drawing.Point(13, 30);
+            this.tbNote.Multiline = true;
+            this.tbNote.Name = "tbNote";
+            this.tbNote.Size = new System.Drawing.Size(219, 179);
+            this.tbNote.TabIndex = 1;
+            // 
             // StickNotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(244, 221);
+            this.Controls.Add(this.tbNote);
             this.Controls.Add(this.btnNewNote);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "StickNotes";
             this.Text = "Sticky Notes by Nick";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnNewNote;
+        private System.Windows.Forms.TextBox tbNote;
     }
 }
 
