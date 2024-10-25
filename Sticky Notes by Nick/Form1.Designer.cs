@@ -1,6 +1,6 @@
 ﻿namespace Sticky_Notes_by_Nick
 {
-    partial class Form1
+    partial class StickNotes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // StickNotes
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(244, 221);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "StickNotes";
+            this.Opacity = 0.8D;
+            this.Text = "Sticky Notes by Nick";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

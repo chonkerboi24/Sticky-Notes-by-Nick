@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sticky_Notes_by_Nick
 {
-    public partial class Form1 : Form
+    public partial class StickNotes : Form
     {
-        public Form1()
+        public StickNotes()
         {
             InitializeComponent();
         }
