@@ -37,7 +37,6 @@
             this.ClientSize = new System.Drawing.Size(244, 221);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "StickNotes";
-            this.Opacity = 0.8D;
             this.Text = "Sticky Notes by Nick";
             this.ResumeLayout(false);
 
