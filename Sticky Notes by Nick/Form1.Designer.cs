@@ -41,7 +41,7 @@
             this.btnNewNote.FlatAppearance.BorderSize = 0;
             this.btnNewNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewNote.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewNote.Location = new System.Drawing.Point(13, 1);
+            this.btnNewNote.Location = new System.Drawing.Point(13, 4);
             this.btnNewNote.Name = "btnNewNote";
             this.btnNewNote.Size = new System.Drawing.Size(64, 23);
             this.btnNewNote.TabIndex = 0;
@@ -56,20 +56,22 @@
             this.tbNote.Location = new System.Drawing.Point(13, 30);
             this.tbNote.Multiline = true;
             this.tbNote.Name = "tbNote";
-            this.tbNote.Size = new System.Drawing.Size(219, 179);
+            this.tbNote.Size = new System.Drawing.Size(259, 219);
             this.tbNote.TabIndex = 1;
             // 
             // menuColorChange
             // 
+            this.menuColorChange.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuColorChange.FormattingEnabled = true;
             this.menuColorChange.Items.AddRange(new object[] {
             "Red",
             "Green",
             "Blue",
             "Random"});
-            this.menuColorChange.Location = new System.Drawing.Point(182, 3);
+            this.menuColorChange.Location = new System.Drawing.Point(222, 4);
+            this.menuColorChange.MaxDropDownItems = 4;
             this.menuColorChange.Name = "menuColorChange";
-            this.menuColorChange.Size = new System.Drawing.Size(50, 21);
+            this.menuColorChange.Size = new System.Drawing.Size(50, 22);
             this.menuColorChange.TabIndex = 2;
             this.menuColorChange.Text = "Color";
             this.menuColorChange.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -78,7 +80,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(244, 221);
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.menuColorChange);
             this.Controls.Add(this.tbNote);
             this.Controls.Add(this.btnNewNote);
