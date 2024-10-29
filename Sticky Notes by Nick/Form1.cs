@@ -17,6 +17,18 @@ namespace Sticky_Notes_by_Nick
         {
             InitializeComponent();
         }
+        private void randomColor()
+        {
+            Random randomColor = new Random();
+
+            int r = randomColor.Next(100, 256);
+            int g = randomColor.Next(100, 256);
+            int b = randomColor.Next(100, 256);
+
+            BackColor = Color.FromArgb(r, g, b);
+            btnNewNote.BackColor = Color.FromArgb(r, g, b);
+            tbNote.BackColor = Color.FromArgb(r, g, b);
+        }
 
         private void btnNewNote_Click(object sender, EventArgs e)
         {
@@ -29,30 +41,40 @@ namespace Sticky_Notes_by_Nick
 
         private void btnChangeColor_Click(object sender, EventArgs e)
         {
-            Random randomColor = new Random();
-
-            int r = randomColor.Next(100, 256);
-            int g = randomColor.Next(100, 256);
-            int b = randomColor.Next(100, 256);
-
-            BackColor = Color.FromArgb(r, g, b);
-            
-            btnNewNote.BackColor = Color.FromArgb(r, g, b);
-            tbNote.BackColor = Color.FromArgb(r, g, b);
+            randomColor();
         }
 
         private void StickNotes_Load(object sender, EventArgs e)
         {
-            Random randomColor = new Random();
+            randomColor();
+        }
 
-            int r = randomColor.Next(100, 256);
-            int g = randomColor.Next(100, 256);
-            int b = randomColor.Next(100, 256);
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedItem = menuColorChange.SelectedItem.ToString();
 
-            BackColor = Color.FromArgb(r, g, b);
-            
-            btnNewNote.BackColor = Color.FromArgb(r, g, b);
-            tbNote.BackColor = Color.FromArgb(r, g, b);
+            switch (selectedItem)
+            {
+                case "Red":
+                    BackColor = Color.OrangeRed;
+                    btnNewNote.BackColor= Color.OrangeRed;
+                    tbNote.BackColor= Color.OrangeRed;
+                    break;
+                case "Green":
+                    BackColor = Color.LightGreen;
+                    btnNewNote.BackColor= Color.LightGreen;
+                    tbNote.BackColor = Color.LightGreen;
+                    break;
+                case "Blue":
+                    BackColor = Color.Cyan;
+                    btnNewNote.BackColor= Color.Cyan;
+                    tbNote.BackColor= Color.Cyan;
+                    break;
+                case "Random":
+                    randomColor();
+                    break;
+
+            }
         }
     }
 }

@@ -30,7 +30,8 @@
         {
             this.btnNewNote = new System.Windows.Forms.Button();
             this.tbNote = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.menuColorChange = new System.Windows.Forms.ComboBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
             // btnNewNote
@@ -58,21 +59,27 @@
             this.tbNote.Size = new System.Drawing.Size(219, 179);
             this.tbNote.TabIndex = 1;
             // 
-            // comboBox1
+            // menuColorChange
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(182, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(50, 21);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "Color";
+            this.menuColorChange.FormattingEnabled = true;
+            this.menuColorChange.Items.AddRange(new object[] {
+            "Red",
+            "Green",
+            "Blue",
+            "Random"});
+            this.menuColorChange.Location = new System.Drawing.Point(182, 3);
+            this.menuColorChange.Name = "menuColorChange";
+            this.menuColorChange.Size = new System.Drawing.Size(50, 21);
+            this.menuColorChange.TabIndex = 2;
+            this.menuColorChange.Text = "Color";
+            this.menuColorChange.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // StickNotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(244, 221);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.menuColorChange);
             this.Controls.Add(this.tbNote);
             this.Controls.Add(this.btnNewNote);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -88,7 +95,8 @@
 
         private System.Windows.Forms.Button btnNewNote;
         private System.Windows.Forms.TextBox tbNote;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox menuColorChange;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
