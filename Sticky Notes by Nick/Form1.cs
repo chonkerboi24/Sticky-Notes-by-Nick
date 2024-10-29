@@ -56,9 +56,9 @@ namespace Sticky_Notes_by_Nick
             switch (selectedItem)
             {
                 case "Red":
-                    BackColor = Color.OrangeRed;
-                    btnNewNote.BackColor= Color.OrangeRed;
-                    tbNote.BackColor= Color.OrangeRed;
+                    BackColor = Color.IndianRed;
+                    btnNewNote.BackColor= Color.IndianRed;
+                    tbNote.BackColor= Color.IndianRed;
                     break;
                 case "Green":
                     BackColor = Color.LightGreen;
