@@ -37,6 +37,8 @@
             // 
             this.btnNewNote.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnNewNote.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNewNote.FlatAppearance.BorderSize = 0;
+            this.btnNewNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewNote.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewNote.Location = new System.Drawing.Point(13, 1);
             this.btnNewNote.Name = "btnNewNote";
@@ -48,7 +50,7 @@
             // 
             // tbNote
             // 
-            this.tbNote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNote.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbNote.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNote.Location = new System.Drawing.Point(13, 30);
             this.tbNote.Multiline = true;
@@ -60,6 +62,8 @@
             // 
             this.btnChangeColor.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnChangeColor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChangeColor.FlatAppearance.BorderSize = 0;
+            this.btnChangeColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChangeColor.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeColor.Location = new System.Drawing.Point(168, 1);
             this.btnChangeColor.Name = "btnChangeColor";
