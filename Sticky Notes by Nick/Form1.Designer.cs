@@ -84,6 +84,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "StickNotes";
             this.Text = "Sticky Notes by Nick";
+            this.Load += new System.EventHandler(this.StickNotes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -40,5 +40,19 @@ namespace Sticky_Notes_by_Nick
             btnNewNote.BackColor = Color.FromArgb(r, g, b);
             tbNote.BackColor = Color.FromArgb(r, g, b);
         }
+
+        private void StickNotes_Load(object sender, EventArgs e)
+        {
+            Random randomColor = new Random();
+
+            int r = randomColor.Next(100, 256);
+            int g = randomColor.Next(100, 256);
+            int b = randomColor.Next(100, 256);
+
+            BackColor = Color.FromArgb(r, g, b);
+            btnChangeColor.BackColor = Color.FromArgb(r, g, b);
+            btnNewNote.BackColor = Color.FromArgb(r, g, b);
+            tbNote.BackColor = Color.FromArgb(r, g, b);
+        }
     }
 }
