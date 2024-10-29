@@ -67,6 +67,7 @@
             this.btnChangeColor.TabIndex = 2;
             this.btnChangeColor.Text = "Color";
             this.btnChangeColor.UseVisualStyleBackColor = false;
+            this.btnChangeColor.Click += new System.EventHandler(this.btnChangeColor_Click);
             // 
             // StickNotes
             // 

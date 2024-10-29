@@ -26,5 +26,19 @@ namespace Sticky_Notes_by_Nick
 
             newNote.Start();
         }
+
+        private void btnChangeColor_Click(object sender, EventArgs e)
+        {
+            Random randomColor = new Random();
+
+            int r = randomColor.Next(100, 256);
+            int g = randomColor.Next(100, 256);
+            int b = randomColor.Next(100, 256);
+
+            BackColor = Color.FromArgb(r, g, b);
+            btnChangeColor.BackColor = Color.FromArgb(r, g, b);
+            btnNewNote.BackColor = Color.FromArgb(r, g, b);
+            tbNote.BackColor = Color.FromArgb(r, g, b);
+        }
     }
 }
