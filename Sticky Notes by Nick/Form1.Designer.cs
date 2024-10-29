@@ -30,7 +30,7 @@
         {
             this.btnNewNote = new System.Windows.Forms.Button();
             this.tbNote = new System.Windows.Forms.TextBox();
-            this.btnChangeColor = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnNewNote
@@ -58,27 +58,21 @@
             this.tbNote.Size = new System.Drawing.Size(219, 179);
             this.tbNote.TabIndex = 1;
             // 
-            // btnChangeColor
+            // comboBox1
             // 
-            this.btnChangeColor.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnChangeColor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnChangeColor.FlatAppearance.BorderSize = 0;
-            this.btnChangeColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChangeColor.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangeColor.Location = new System.Drawing.Point(168, 1);
-            this.btnChangeColor.Name = "btnChangeColor";
-            this.btnChangeColor.Size = new System.Drawing.Size(64, 23);
-            this.btnChangeColor.TabIndex = 2;
-            this.btnChangeColor.Text = "Color";
-            this.btnChangeColor.UseVisualStyleBackColor = false;
-            this.btnChangeColor.Click += new System.EventHandler(this.btnChangeColor_Click);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(182, 3);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(50, 21);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.Text = "Color";
             // 
             // StickNotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(244, 221);
-            this.Controls.Add(this.btnChangeColor);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.tbNote);
             this.Controls.Add(this.btnNewNote);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -94,7 +88,7 @@
 
         private System.Windows.Forms.Button btnNewNote;
         private System.Windows.Forms.TextBox tbNote;
-        private System.Windows.Forms.Button btnChangeColor;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

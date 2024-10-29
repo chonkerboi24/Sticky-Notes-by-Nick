@@ -36,7 +36,7 @@ namespace Sticky_Notes_by_Nick
             int b = randomColor.Next(100, 256);
 
             BackColor = Color.FromArgb(r, g, b);
-            btnChangeColor.BackColor = Color.FromArgb(r, g, b);
+            
             btnNewNote.BackColor = Color.FromArgb(r, g, b);
             tbNote.BackColor = Color.FromArgb(r, g, b);
         }
@@ -50,7 +50,7 @@ namespace Sticky_Notes_by_Nick
             int b = randomColor.Next(100, 256);
 
             BackColor = Color.FromArgb(r, g, b);
-            btnChangeColor.BackColor = Color.FromArgb(r, g, b);
+            
             btnNewNote.BackColor = Color.FromArgb(r, g, b);
             tbNote.BackColor = Color.FromArgb(r, g, b);
         }
